@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Sub Menu</title>
+
+        <style>
+            *{
+              margin: 0;
+              padding: 0;
+             }
+             nav {
+             background: #444;
+             width: 1200px;
+             text-transform: uppercase;
+           }
+
+
+            ul{
+              list-style: none;
+              padding: 0;
+              margin: 0;
+            }
+
+            ul li{
+               width: 120px;
+               background-color:#606266;
+               float: left;
+               height: 35px;
+               line-height: 35px;
+               text-align: center;
+               position: relative;
+            }
+
+            ul li:hover{
+              background: #0e6ea8;
+            }
+
+            ul li a{
+               color: #fff;
+               text-decoration: none;
+               padding: 12px;
+             }
+
+
+            ul li ul{
+              display: none;
+            }
+
+            ul li:hover ul{
+              display: block;
+            }
+
+            ul li ul .itam-2{
+             position: absolute;
+             left: 122px;
+             top: 0;
+             display: none;
+           }
+            ul li ul li:last-child:hover .itam-2{
+              display: block;
+            }
+            .navigation{
+              width: 100%;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a>
+                    <ul>
+                      <li><a href="#">Menu 2</a></li>
+                      <li><a href="#">Menu 1</a>
+
+                            <ul class="itam-2">
+                              <li><a href="#">Menu 1.1</a></li>
+                              <li><a href="#">Menu 1.2</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
